@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+:root{
+    --success-color : #2ecc71;
+    --erroe-color : #e74c3c;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    background-color: #fff;
+    border: 5px;
+    box-shadow: 0px 2px 10px rgb(17, 16, 16);
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.container h2{
+    color: #e74c3c;
+    text-transform: capitalize;
+}
+
+.form-control{
+    padding: 20px;
+    position: relative;
+}
+
+.form-control label{
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+    text-align: justify;
+    margin-left: 8px;
+    text-transform: capitalize;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+    font-size: 15px;
+
+}
+.form-control input:focus{
+    border-color: #777;
+    outline: none;
+}
+
+
+
+
+/* javascript script apply success color erroe color */
+.form-control .success{
+    border-color: var(--success-color);
+}
+
+.form-control .error{
+    border-color: var(--erroe-color);
+}
+
+.form-control small {
+    color: var(--erroe-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 30px;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+
+}
+.btn{
+    width: 70%;
+    padding: 5px 0px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #3298db;
+    border-radius: 5px;
+    color: #fff;
+}
